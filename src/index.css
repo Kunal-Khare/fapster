@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.layout {
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    #faebd7,
+    white,
+    oklch(95% 0.052 163.051)
+  );
+}
+
+.navbar-root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0px;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.links {
+  display: flex;
+  gap: 14px;
+}
+
+.link-items {
+  font-size: 20px;
+  text-decoration: none;
+  color: oklch(70.8% 0 0);
+}
+
+.link-items:hover {
+  color: black;
+  transition: color 0.2 ease-out;
+}
+
+.btn {
+  all: unset;
+  font-size: 20px;
+  padding: 4px 8px;
+  background-color: oklch(69.6% 0.17 162.48);
+  border-radius: 6px;
+  color: oklch(98.5% 0 0);
+  text-shadow: oklch(37% 0.013 285.805);
+  text-shadow: 0px 0.5px 1px rgb(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.hero-root {
+  padding: 80px 0px;
+}
+
+.badge {
+  font-size: 15px;
+  max-width: 250px;
+  border-radius: 50px;
+  background-color: #faebd7;
+  padding: 4px 8px;
+  width: fit-content;
+  margin: 0 auto;
+  border: 1px solid #dedede;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge:hover {
+  background-color: #ffe4c4;
+  transition: background-color ease-out;
+}
+
+.hero-title {
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -0.6px;
+  line-height: 1.1;
+  margin-top: 25px;
+}
+
+.hero-subtext {
+  font-size: 20px;
+  color: oklch(43.9% 0 0);
+  text-align: center;
+  max-width: 900px;
+  margin: 10px auto;
+}
+
+
+.hero-cta{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.btn-second{
+ all: unset;
+ font-size: 20px;
+ color: black;
+ padding: 4px 8px;
+
+
+ display: flex;
+ align-items: center;
+ gap: 2px;
+ cursor: pointer;
+ border-radius: 5px;
+
+
+ &:hover{
+  background-color: rgb(241, 234, 234);
+ }
+}
+
+.left-line {
+  height: 100px;
+  width: 0.5;
+  background: red;
+}
