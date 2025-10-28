@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: manrope;
 }
 
 .container {
@@ -22,6 +22,7 @@
     white,
     oklch(95% 0.052 163.051)
   );
+  position: relative;
  
 }
 
@@ -32,8 +33,20 @@
   padding: 16px 0px;
 }
 
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
 .logo {
   font-size: 20px;
+}
+.brand-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
 }
 
 .links {
@@ -142,9 +155,10 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 0.6px;
+  width: 1px;
   background: linear-gradient(to bottom, rgb(216, 216, 216),  rgb(216, 216, 216), rgb(235, 232, 232));
   z-index: 1;
+  
 }
 
 /* Left line calculation: 50% - (container-width/2) - gap */
@@ -177,6 +191,7 @@
   margin: 0 auto;
   border-radius: 5px ;
   object-fit: cover;
+  box-shadow: 0px 7px 12px rgb(0, 0, 0, 0.25);
 
 
 }

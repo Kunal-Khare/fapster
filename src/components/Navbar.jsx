@@ -20,7 +20,12 @@ function Navbar() {
 
   return (
     <div className="navbar-root">
-      <div className="logo">Fapster</div>
+      <div className="brand">
+        <img  src="logo.jpg" alt="" className="brand-icon" />
+        <span className="logo">Fapster</span>
+
+      </div>
+
       <div className="links">
         {links.map((link, index) => {
           return (
