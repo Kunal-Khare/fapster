@@ -18,10 +18,11 @@
   height: 100vh;
   background-image: linear-gradient(
     to bottom,
-    #faebd7,
+    #f3e6d5,
     white,
     oklch(95% 0.052 163.051)
   );
+ 
 }
 
 .navbar-root {
@@ -38,12 +39,14 @@
 .links {
   display: flex;
   gap: 14px;
+  align-items: center;
 }
 
 .link-items {
   font-size: 20px;
   text-decoration: none;
-  color: oklch(70.8% 0 0);
+  color: oklch(55.985% 0.00121 14.301);
+  line-height: 3;
 }
 
 .link-items:hover {
@@ -54,7 +57,7 @@
 .btn {
   all: unset;
   font-size: 20px;
-  padding: 4px 8px;
+  padding: 8px 12px;
   background-color: oklch(69.6% 0.17 162.48);
   border-radius: 6px;
   color: oklch(98.5% 0 0);
@@ -62,6 +65,7 @@
   text-shadow: 0px 0.5px 1px rgb(0, 0, 0, 0.25);
   box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.25);
   cursor: pointer;
+  
 }
 
 .hero-root {
@@ -131,8 +135,31 @@
  }
 }
 
-.left-line {
-  height: 100px;
-  width: 0.5;
-  background: red;
+
+.layout::before,
+.layout::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0.6px;
+  background: linear-gradient(to bottom, rgb(216, 216, 216),  rgb(216, 216, 216), rgb(235, 232, 232));
+  z-index: 1;
+}
+
+/* Left line calculation: 50% - (container-width/2) - gap */
+.layout::before {
+  left: calc(50% - 620px); /* 620px = 600px (half of 1200px) + 20px gap */
+}
+
+/* Right line calculation: 50% + (container-width/2) + gap */
+.layout::after {
+  right: calc(50% - 620px); /* Same calculation for symmetry */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2; /* Keep content above the lines */
 }
